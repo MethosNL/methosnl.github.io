@@ -1,0 +1,5 @@
+{{ $options := (dict "outputStyle" "compressed") }}
+{{ $optionsCss := (dict "outputStyle" "compressed") }}
+
+{{ $style := resources.Get "css/custom.css" | toCSS $options | fingerprint }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">

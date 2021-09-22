@@ -1,0 +1,25 @@
+{{if not (in .Params.hide "about")}}
+<div>
+    <label><i class="fas fa-align-right"></i>&nbsp;&nbsp;About this page</label>
+        <div>
+            Aantal woorden:
+            {{ .Content | countwords }}
+		</div>
+        <div>
+            Tijd om te lezen:
+            {{ .Page.ReadingTime }} min.
+		</div>
+</div>	
+{{ end }}
+
+{{- partial "_mdinclude.html" (dict "name" "article-sidebar-before" "context" .) -}}
+<div class="TableOfContents">
+    <label><i class="fas fa-align-right"></i>&nbsp;&nbsp;{{T "table-of-contents"}}</label>
+    <nav>
+        <ul >
+            <li><a href="{{ .RelPermalink }}">{{.Title}}</a></li>
+        </ul>
+    </nav>
+    {{ .TableOfContents }}
+</div>
+{{- partial "_mdinclude.html" (dict "name" "article-sidebar-after" "context" .) -}}

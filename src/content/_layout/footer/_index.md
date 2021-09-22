@@ -1,0 +1,1 @@
+&copy; <a href="https://www.methos.nl">Methos B.V.</a> | Cloud & datacenter automatisering
