@@ -1,0 +1,958 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+	Azure DevOps :: Methos
+</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2021-09-22T14:00:29 CEST">
+<meta name="description" content="Azure DevOps">
+
+
+
+<title>Azure DevOps :: Methos</title>
+
+<link rel="shortcut icon" href='/images/favicon.png' type="image/x-icon" />
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+
+<script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
+
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel="stylesheet">
+
+
+
+<link rel="stylesheet" type="text/css" href='https://methosnl.github.io/sass/layout.css'>
+<link rel="stylesheet" type="text/css" href='https://methosnl.github.io/css/style.main.css'>
+<link rel="stylesheet" type="text/css" href='https://methosnl.github.io/css/style.menu.css'>
+<link rel="stylesheet" type="text/css" href='https://methosnl.github.io/sass/shortcodes/notice.css'>
+<link rel="stylesheet" type="text/css" href='https://methosnl.github.io/sass/shortcodes/tabs.css'>
+<link rel="stylesheet" type="text/css" href='https://methosnl.github.io/sass/shortcodes/panel.css'>
+<link rel="stylesheet" type="text/css" href='https://methosnl.github.io/sass/shortcodes/columns.css'>
+<link rel="stylesheet" type="text/css" href='https://methosnl.github.io/sass/shortcodes/children.css'>
+<link rel="stylesheet" type="text/css" href='https://methosnl.github.io/sass/shortcodes/attachments.css'>
+<link rel="stylesheet" type="text/css" href='https://methosnl.github.io/sass/shortcodes/alert.css'>
+<link rel="stylesheet" type="text/css" href='/css/methos.css'>
+
+<script src='/js/methos.js'></script>
+<script type="text/javascript">
+      var baseurl = "https:\/\/methosnl.github.io\/";
+</script>
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/custom.e3d15a110390edd498333b1076e1c79cb9a5a9455c69b845284c7a65aeb077bc.css" integrity="sha256-49FaEQOQ7dSYMzsQduHHnLmlqUVcabhFKEx6Za6wd7w=">
+
+    
+  </head>
+
+  <body data-url="/technologie/devops/azure-devops/"
+
+  class="">
+
+
+    
+    
+    <header>
+        <div>
+    
+    <div class="burger ">
+        <a href="javascript:void(0);" style="font-size:15px;" onclick="$('article > aside').toggleClass('responsive')">&#9776;</a>
+    </div>
+    
+
+    <div>
+        <a href="../"><img src="/images/Logo.png" style="height: 30px; width: 120px;"></a>
+
+		
+	
+			
+		
+	    	
+	    
+	</div>
+
+    <div class="social">
+        <ul>
+            <li>
+                <a href="#" title="LinkedIn">
+                    <i class="fab fa-linkedin" style="font-size:24px;color:#0e76a8;padding-right:5px;"></i> <a href="https://www.linkedin.com/company/17887969"></a>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="Twitter">
+                    <i class="fab fa-twitter" style="font-size:24px;color:#1DA1F2;padding-right:5px;"></i> <a href="http://www.twitter.com/methosnl"></a>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="Github">
+                    <i class="fab fa-github" style="font-size:24px;color:black;padding-right:5px;"></i> <a href="http://www.github.com/methosnl"></a>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+    </header>
+    
+
+    <article>
+
+      
+      <aside class="">
+        
+<div class="search">
+	<div class="searchbox">
+	  <input data-search-input id="search-by" type="text" placeholder="Type to search...">
+	</div>
+	<script type="text/javascript" src="/vendor/lunr/lunr.min.js"></script>
+	<script type="text/javascript" src="/vendor/auto-complete/auto-complete.js"></script>
+	<link href="/vendor/auto-complete/auto-complete.css" rel="stylesheet">
+	<script type="text/javascript">
+	  
+	      var baseurl = "https:\/\/methosnl.github.io\/";
+	  
+	</script>
+	<script type="text/javascript" src="/js/search.js"></script>
+</div>
+
+		
+	
+			
+		
+	    	
+	    
+	<div id="close_menu">
+  <a href="javascript:void(0);" style="font-size:15px;" onclick="$('article > aside').toggleClass('responsive')">
+      <i class="fa fa-lg fa-times"></i>
+  </a>
+</div>
+
+<ul class="menu">
+
+    <li data-nav-id="https://methosnl.github.io/methos/" class="dd-item haschildren
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+      <i class="fas fa-chevron-right ddexp"></i>
+        
+      
+          <a href="/methos/">Methos</a>
+      
+        <ul>
+              
+
+    <li data-nav-id="https://methosnl.github.io/methos/team/" class="dd-item haschildren
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+      
+      <a href="/methos/team/">Team</a>
+      <i class="fas fa-chevron-right ddexp"></i>
+        
+      
+        <ul>
+              
+
+    <li data-nav-id="https://methosnl.github.io/methos/team/erwinblonk/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+      
+      <a href="/methos/team/erwinblonk/">Erwin Blonk</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://methosnl.github.io/methos/team/jeffwouters/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+      
+      <a href="/methos/team/jeffwouters/">Jeff Wouters</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://methosnl.github.io/methos/team/koenhalfwerk/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+      
+      <a href="/methos/team/koenhalfwerk/">Koen Halfwerk</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://methosnl.github.io/methos/team/patrickmaurer/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+      
+      <a href="/methos/team/patrickmaurer/">Patrick Maurer</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://methosnl.github.io/methos/team/rexdekoning/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+      
+      <a href="/methos/team/rexdekoning/">Rex de Koning</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://methosnl.github.io/methos/team/sylviawouters/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+      
+      <a href="/methos/team/sylviawouters/">Sylvia Wouters</a>
+      
+        
+      
+    </li>
+        </ul>
+    </li>
+              
+
+    <li data-nav-id="https://methosnl.github.io/methos/kom-erbij/" class="dd-item haschildren
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+      
+      <a href="/methos/kom-erbij/">Kom er bij!</a>
+      <i class="fas fa-chevron-right ddexp"></i>
+        
+      
+        <ul>
+              
+
+    <li data-nav-id="https://methosnl.github.io/methos/kom-erbij/azure-engineer/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+      
+      <a href="/methos/kom-erbij/azure-engineer/">Azure Engineer</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://methosnl.github.io/methos/kom-erbij/office365-engineer/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+      
+      <a href="/methos/kom-erbij/office365-engineer/">Office365 Engineer</a>
+      
+        
+      
+    </li>
+        </ul>
+    </li>
+              
+
+    <li data-nav-id="https://methosnl.github.io/methos/contact/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+      
+      <a href="/methos/contact/">Contact</a>
+      
+        
+      
+    </li>
+        </ul>
+    </li>
+    
+
+    <li data-nav-id="https://methosnl.github.io/oplossingen/" class="dd-item haschildren
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+      <i class="fas fa-chevron-right ddexp"></i>
+        
+      
+          <a href="/oplossingen/">Oplossingen</a>
+      
+        <ul>
+              
+
+    <li data-nav-id="https://methosnl.github.io/oplossingen/health-check/" class="dd-item haschildren
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+      
+      <a href="/oplossingen/health-check/">Health Checks</a>
+      <i class="fas fa-chevron-right ddexp"></i>
+        
+      
+        <ul>
+              
+
+    <li data-nav-id="https://methosnl.github.io/oplossingen/health-check/office365/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+      
+      <a href="/oplossingen/health-check/office365/">Office 365</a>
+      
+        
+      
+    </li>
+        </ul>
+    </li>
+              
+
+    <li data-nav-id="https://methosnl.github.io/oplossingen/security/" class="dd-item haschildren
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+      
+      <a href="/oplossingen/security/">Security</a>
+      <i class="fas fa-chevron-right ddexp"></i>
+        
+      
+        <ul>
+              
+
+    <li data-nav-id="https://methosnl.github.io/oplossingen/security/hibp/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+      
+      <a href="/oplossingen/security/hibp/">Have I Been Pwned</a>
+      
+        
+      
+    </li>
+        </ul>
+    </li>
+              
+
+    <li data-nav-id="https://methosnl.github.io/oplossingen/infra-as-code/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+      
+      <a href="/oplossingen/infra-as-code/">Infra-as-code</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://methosnl.github.io/oplossingen/cicd-pipeline/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+      
+      <a href="/oplossingen/cicd-pipeline/">CI/CD Pipeline</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://methosnl.github.io/oplossingen/moderne-werkplek/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+      
+      <a href="/oplossingen/moderne-werkplek/">Moderne Werkplek</a>
+      
+        
+      
+    </li>
+        </ul>
+    </li>
+    
+
+    <li data-nav-id="https://methosnl.github.io/cloudsourcing/" class="dd-item haschildren
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+      <i class="fas fa-chevron-right ddexp"></i>
+        
+      
+          <a href="/cloudsourcing/">CloudSourcing</a>
+      
+        <ul>
+              
+
+    <li data-nav-id="https://methosnl.github.io/cloudsourcing/infra-as-code/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+      
+      <a href="/cloudsourcing/infra-as-code/">Infra-as-Code</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://methosnl.github.io/cloudsourcing/cicd-pipeline/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+      
+      <a href="/cloudsourcing/cicd-pipeline/">CI/CD Pipeline</a>
+      
+        
+      
+    </li>
+        </ul>
+    </li>
+    
+
+    
+
+    <li data-nav-id="https://methosnl.github.io/training/" class="dd-item haschildren
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+      <i class="fas fa-chevron-right ddexp"></i>
+        
+      
+          <a href="/training/">Trainingen &amp; Workshops</a>
+      
+        <ul>
+              
+
+    <li data-nav-id="https://methosnl.github.io/training/trainingen/" class="dd-item haschildren
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+      
+      <a href="/training/trainingen/">Trainingen</a>
+      <i class="fas fa-chevron-right ddexp"></i>
+        
+      
+        <ul>
+              
+
+    <li data-nav-id="https://methosnl.github.io/training/trainingen/az-104/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+      
+      <a href="/training/trainingen/az-104/">AZ-104</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://methosnl.github.io/training/trainingen/az-303/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+      
+      <a href="/training/trainingen/az-303/">AZ-303</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://methosnl.github.io/training/trainingen/az-304/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+      
+      <a href="/training/trainingen/az-304/">AZ-304</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://methosnl.github.io/training/trainingen/az-400/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+      
+      <a href="/training/trainingen/az-400/">AZ-400</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://methosnl.github.io/training/trainingen/az-500/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+      
+      <a href="/training/trainingen/az-500/">AZ-500</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://methosnl.github.io/training/trainingen/az-900/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+      
+      <a href="/training/trainingen/az-900/">AZ-900</a>
+      
+        
+      
+    </li>
+              
+
+    <li data-nav-id="https://methosnl.github.io/training/trainingen/ms-10961/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+      
+      <a href="/training/trainingen/ms-10961/">MS-10961</a>
+      
+        
+      
+    </li>
+        </ul>
+    </li>
+              
+
+    <li data-nav-id="https://methosnl.github.io/training/workshops/" class="dd-item haschildren
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+      
+      <a href="/training/workshops/">Workshops</a>
+      <i class="fas fa-chevron-right ddexp"></i>
+        
+      
+        <ul>
+              
+
+    <li data-nav-id="https://methosnl.github.io/training/workshops/chocolatey/" class="dd-item
+        item_level_$level
+        ">
+
+      
+      
+      
+      
+      
+      <a href="/training/workshops/chocolatey/">Chocolatey</a>
+      
+        
+      
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    
+
+
+
+</ul>
+
+		
+	
+			
+		
+	    	
+	    
+	
+      </aside>
+      
+
+      <section class="page ">
+      
+	
+		
+    
+    
+    <nav id="ariane" aria-label="breadcrumb">
+      <ol class="ariane">
+        
+  
+  	
+		
+  
+  	
+		
+  
+  	
+	<li >
+      <a class="text-link" href="https://methosnl.github.io/">
+        Home
+      </a>
+    </li>
+	
+  
+    <li class="">
+      <a class="text-link" href="/technologie/">
+        Technologie
+      </a>
+    </li>
+	
+  	
+  
+    <li class="">
+      <a class="text-link" href="/technologie/devops/">
+        DevOps
+      </a>
+    </li>
+	
+  	
+  
+    <li class="active">
+      
+        Azure DevOps
+      
+    </li>
+
+      </ol>
+    </nav>
+    
+    
+
+    
+		
+        
+		
+		
+		
+		
+		
+		
+		
+
+		
+			<h1>Azure DevOps</h1>
+        
+
+		
+										
+		
+
+		
+	
+
+	
+	
+	<div class="jump-to-section">
+		<span onclick="$h = $(this);$h.next('nav').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('nav').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+  			<span class="fas fa-align-right"></span>
+  			Jump to Section
+  			<i style=";" class="fas fa-chevron-right"></i>
+		</span>
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#voordelen-van-azure-devops">Voordelen van Azure DevOps</a></li>
+    <li><a href="#migratie-naar-azure-devops">Migratie naar Azure DevOps</a></li>
+    <li><a href="#starten-met-azure-devops">Starten met Azure DevOps</a></li>
+  </ul>
+</nav>
+	</div>
+	
+	
+
+
+
+
+
+
+	<div class="content">
+	    <p>Azure DevOps Services is de cloudoplossing van Microsoft voor Application Lifecycle Management. Kort gezegd is het een Azure DevOps Server (voorheen TFS) in de cloud. Azure DevOps stelt u in staat om uw volledige DevOps toolset naar de cloud te brengen. Zonder dat u ook maar één server hoeft te installeren of configureren kunt u binnen enkele minuten aan de slag. Naast de krachtige features, zoals versiebeheer, het plannen en traceren van projecten en automatische builds/deployments, kunt u uw toolset altijd en overal benaderen. Azure DevOps helpt u om de ontwikkeling van software te versnellen en software van hogere kwaliteit te leveren.</p>
+<h1 ref="azure-devops-services" >Azure DevOps Services</h1><a class="anchor" id="azure-devops-services"></a>
+<p>In Azure DevOps is het mogelijk om de verschillende onderdelen (Services) afzonderlijk af te nemen. Dit is ideaal voor teams die ervoor kiezen om voor een bepaalde service een andere aanbieder te gebruiken, bijvoorbeeld Github voor code, Jira voor Boards/Work Item tracking et cetera. Kijk hier voor de prijzen van de Azure DevOps Services.</p>
+<p>De onderdelen zien er als volgt uit:</p>
+<table>
+<thead>
+<tr>
+<th>Logo</th>
+<th>Naam</th>
+<th>Omschrijving</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="./Azure-Boards.png" alt="Azure Boards"></td>
+<td>Azure Boards</td>
+<td>Azure Boards bevat de agile tools zoals Backlogs, Task/Scrum/Kanban Boards, Workitem Management met de functionaliteiten die daarbij horen.</td>
+</tr>
+<tr>
+<td><img src="./Azure-Test-Plans.png" alt="Azure Test Plans"></td>
+<td>Azure Test Plans</td>
+<td>Azure Test Plans is functionaliteit om de administratie rondom handmatig en exploratief testen te ondersteunen. Hierin zit ook het beheer van Test Cases en rapportage over testvoorbereiding en testresultaten.</td>
+</tr>
+<tr>
+<td><img src="./Azure-Repos.png" alt="Azure Repositories"></td>
+<td>Azure Repositories</td>
+<td>Azure Repositories zorgt voor ondersteuning van Code Repositories in de vorm van TFVC (Team Foundation Version Control, in de volksmond: &lsquo;Source Control&rsquo;) en uiteraard Git. De native implementatie van Git in Azure DevOps, inclusief een rijke Pull Request ervaring. En de mogelijkheid om ongelimiteerd repositories aan te maken binnen een project.</td>
+</tr>
+<tr>
+<td><img src="./Azure-Artifacts.png" alt="Azure Artifacts"></td>
+<td>Azure Artifacts</td>
+<td>Azure Artifacts voorziet in functionaliteit voor het beheer van Package repositories zoals bijvoorbeeld NuGet, NPM etc.</td>
+</tr>
+<tr>
+<td><img src="./Azure-Pipelines.png" alt="Azure Pipelines"></td>
+<td>Azure Pipelines</td>
+<td>Azure Pipelines is een van de belangrijkste veranderingen. Hieronder vallen (CI) Builds en Release Management (automated deployments). Deze zaken waren al enige tijd onderdeel van VSTS, maar zijn nu los gekoppeld. Dat betekent dat bijvoorbeeld een publieke Github repository gekoppeld kan worden aan Azure Pipelines. Je krijgt daarbij 10 concurrent pipelines (10 Builds/Deployments tegelijkertijd) gratis.</td>
+</tr>
+</tbody>
+</table>
+<h2 ref="voordelen-van-azure-devops" >Voordelen van Azure DevOps</h2><a class="anchor" id="voordelen-van-azure-devops"></a>
+<p>Ontwikkelen in de Cloud met Azure DevOps biedt vele voordelen. Hieronder hebben we er 10 op een rij gezet.</p>
+<ol>
+<li>Binnen 10 minuten gereed voor gebruik.</li>
+<li>Tot 5 gebruikers is het gebruik gratis (met uitzondering van load testing).</li>
+<li>Eigen subdomein (dev.azure.com/mijnbedrijf).</li>
+<li>Geen zorgen: backups, uptime en onderhoud worden door Microsoft geregeld.</li>
+<li>Altijd de laatste versie van de software beschikbaar.</li>
+<li>Integratie met vele ontwikkeltools zoals Visual Studio, Eclipse en IntelliJ.</li>
+<li>Integratie met GitHub, Kubernetes, Docker en vele anderen.</li>
+<li>Eenvoudig toegang geven aan externen.</li>
+<li>Load Testing vanuit de cloud, dus geen eigen agents nodig.</li>
+<li>Deployen naar elk platform en technologie zoals Windows, iOS, Android, Linux, Azure, Amazon AWS en vele anderen.</li>
+</ol>
+<h2 ref="migratie-naar-azure-devops" >Migratie naar Azure DevOps</h2><a class="anchor" id="migratie-naar-azure-devops"></a>
+<p>Microsoft heeft een oplossing ontwikkeld om soepel te migreren van een lokale TFS of Azure DevOps Server-omgeving naar de cloud. Methos heeft deze migratie methode al vele malen uitgevoerd bij klanten en kan u hierin als Microsoft Gold partner goed begeleiden. Deze methode maakt een volledige migratie van alle gegevens mogelijk, dus inclusief volledige historie. Lees meer over Azure DevOps Migratie.</p>
+<h2 ref="starten-met-azure-devops" >Starten met Azure DevOps</h2><a class="anchor" id="starten-met-azure-devops"></a>
+<p>Meer weten over de mogelijkheden van Azure DevOps? Het koppelen aan Visual Studio en andere ontwikkelplatformen en tools? Hulp nodig bij het aanmaken van uw eigen omgeving of een hands-on instructie om u op weg te helpen?
+Neem contact met ons op!</p>
+
+		</div>
+
+
+
+	
+
+      </section>
+
+      
+      
+      <section class="right-menu ">
+      
+	
+<div>
+    <label><i class="fas fa-align-right"></i>&nbsp;&nbsp;About this page</label>
+        <div>
+            Aantal woorden:
+            574
+		</div>
+        <div>
+            Tijd om te lezen:
+            3 min.
+		</div>
+</div>	
+
+
+		
+	
+			
+		
+	    	
+	  	
+	<div class="TableOfContents">
+    <label><i class="fas fa-align-right"></i>&nbsp;&nbsp;What&#39;s on this page</label>
+    <nav>
+        <ul >
+            <li><a href="/technologie/devops/azure-devops/">Azure DevOps</a></li>
+        </ul>
+    </nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#voordelen-van-azure-devops">Voordelen van Azure DevOps</a></li>
+    <li><a href="#migratie-naar-azure-devops">Migratie naar Azure DevOps</a></li>
+    <li><a href="#starten-met-azure-devops">Starten met Azure DevOps</a></li>
+  </ul>
+</nav>
+</div>
+
+		
+	
+			
+		
+	    	
+	    
+	
+
+      </section>
+      
+    </article>
+    
+    
+    <footer>
+      
+
+		
+	
+			
+		
+	    	<p>© <a href="https://www.methos.nl">Methos B.V.</a> | Cloud &amp; datacenter automatisering</p>
+
+	    
+	
+    </footer>
+    
+
+
+
+  </body>
+</html>

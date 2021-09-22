@@ -1,12 +1,13 @@
-baseURL = "https://www.methos.nl"
+baseURL = "https://methosnl.github.io/"
 
 languageCode = "en-us"
 DefaultContentLanguage = "en"
 title = "Methos"
-theme = "methos"
+theme = "Methos"
 themesdir = "themes"
 pygmentsCodeFences = true
 pygmentsStyle = "monokai"
+publishDir = "../docs"
 
 defaultContentLanguageInSubdir= false
 enableMissingTranslationPlaceholders = false
